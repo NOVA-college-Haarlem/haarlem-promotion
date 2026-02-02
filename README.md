@@ -1,11 +1,10 @@
 # Haarlem Promotion
 
-This repository contains a WordPress installation configured with Docker Compose.
+This repository contains a Docker compose file that will create a clean installation of the latest Wordpress version.
 
 ## Prerequisites
 
 - Docker
-- Docker Compose
 
 ## Getting Started
 
