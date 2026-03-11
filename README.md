@@ -36,3 +36,14 @@ docker-compose down -v
 docker-compose logs -f
 ```
 
+## Troubleshooting
+
+### Admin password lost
+
+If you've lost your administrator password do the following: Open the database via phpMyAdmin (http://localhost:8080/). Select the `wordpress` database and run the following query in the tab "SQL":
+
+```sql
+UPDATE wp_users SET user_pass = MD5('MijnNieuwWachtwoord!') WHERE user_login = 'admin';
+```
+
+Now you should be able to login at http://localhost/wp-admin.
