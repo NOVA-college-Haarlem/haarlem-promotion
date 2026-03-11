@@ -17,6 +17,7 @@ docker-compose up -d
 This will start:
 - WordPress on [http://localhost](http://localhost)
 - MariaDB database (internal)
+- phpMyAdmin (to access wordpress database at http://localhost:8080 when needed)
 
 ### Stop the application
 
